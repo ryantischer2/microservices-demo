@@ -17,6 +17,8 @@ kind: Deployment
 metadata:
   name: emailservice
 spec:
+  nodeSelector: 
+    nodeName: emailservice
   selector:
     matchLabels:
       app: emailservice
