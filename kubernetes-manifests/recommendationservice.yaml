@@ -17,6 +17,8 @@ kind: Deployment
 metadata:
   name: recommendationservice
 spec:
+   nodeSelector: 
+    nodeName: recommendationservice
   selector:
     matchLabels:
       app: recommendationservice
