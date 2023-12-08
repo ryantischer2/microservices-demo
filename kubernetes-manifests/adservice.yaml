@@ -17,6 +17,8 @@ kind: Deployment
 metadata:
   name: adservice
 spec:
+  nodeSelector: 
+    nodeName: adservice
   selector:
     matchLabels:
       app: adservice
