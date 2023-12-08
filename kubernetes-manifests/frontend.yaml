@@ -17,6 +17,8 @@ kind: Deployment
 metadata:
   name: frontend
 spec:
+  nodeSelector: 
+    nodeName: frontend
   selector:
     matchLabels:
       app: frontend
