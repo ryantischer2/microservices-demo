@@ -18,7 +18,7 @@ metadata:
   name: paymentservice
 spec:
   nodeSelector: 
-    nodeName: paymentservice
+    nodeName: payment
   selector:
     matchLabels:
       app: paymentservice
