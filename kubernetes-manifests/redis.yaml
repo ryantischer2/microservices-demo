@@ -17,6 +17,8 @@ kind: Deployment
 metadata:
   name: redis-cart
 spec:
+   nodeSelector: 
+    nodeName: redis-cache
   selector:
     matchLabels:
       app: redis-cart
