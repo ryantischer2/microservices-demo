@@ -17,6 +17,8 @@ kind: Deployment
 metadata:
   name: shippingservice
 spec:
+  nodeSelector: 
+    nodeName: shipping
   selector:
     matchLabels:
       app: shippingservice
