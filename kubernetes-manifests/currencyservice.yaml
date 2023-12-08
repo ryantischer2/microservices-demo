@@ -17,6 +17,8 @@ kind: Deployment
 metadata:
   name: currencyservice
 spec:
+  nodeSelector: 
+    nodeName: currencyservice
   selector:
     matchLabels:
       app: currencyservice
