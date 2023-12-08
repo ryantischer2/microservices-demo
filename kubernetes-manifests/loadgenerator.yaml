@@ -16,6 +16,8 @@ kind: Deployment
 metadata:
   name: loadgenerator
 spec:
+  nodeSelector: 
+    nodeName: loadgenerator
   selector:
     matchLabels:
       app: loadgenerator
