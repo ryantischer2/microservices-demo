@@ -17,6 +17,8 @@ kind: Deployment
 metadata:
   name: cartservice
 spec:
+  nodeSelector: 
+    nodeName: cartservice
   selector:
     matchLabels:
       app: cartservice
