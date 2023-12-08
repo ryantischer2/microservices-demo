@@ -15,10 +15,10 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: cart
+  name: cartservice
 spec:
   nodeSelector: 
-    nodeName: cartservice
+    nodeName: cart
   selector:
     matchLabels:
       app: cartservice
