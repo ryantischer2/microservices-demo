@@ -15,10 +15,10 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ad
+  name: adservice
 spec:
   nodeSelector: 
-    nodeName: adservice
+    nodeName: ad
   selector:
     matchLabels:
       app: adservice
