@@ -18,7 +18,7 @@ metadata:
   name: productcatalogservice
 spec:
   nodeSelector: 
-    nodeName: productcatalogservice
+    nodeName: productcatalog
   selector:
     matchLabels:
       app: productcatalogservice
