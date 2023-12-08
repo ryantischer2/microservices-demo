@@ -17,6 +17,8 @@ kind: Deployment
 metadata:
   name: checkoutservice
 spec:
+  nodeSelector: 
+    nodeName: checkoutservice
   selector:
     matchLabels:
       app: checkoutservice
