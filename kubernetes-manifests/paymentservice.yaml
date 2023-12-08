@@ -17,6 +17,8 @@ kind: Deployment
 metadata:
   name: paymentservice
 spec:
+  nodeSelector: 
+    nodeName: paymentservice
   selector:
     matchLabels:
       app: paymentservice
